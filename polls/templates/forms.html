@@ -1,0 +1,8 @@
+{% load static %}
+<form action="/specification" method="post">
+    {% csrf_token %}
+    <input type="text">{{ form.username }}
+    <input type="text">{{ form.password }}
+    <input type="submit" value="Submit">
+</form>
+

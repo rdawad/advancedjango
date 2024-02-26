@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+
+{% for i in contextdetail %}
+    <h2>Mobile Name: {{ i.name }}</h2>
+    <h4>Price: {{ i.price }}</h4>
+    <img style="width: 30%; height: 50%;" src="{{ i.image.url }}" alt="imagess">
+    <hr>
+{% endfor %}

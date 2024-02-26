@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/specification.css' %}">
+<h1>Specification page</h1>
+{% for i in specs %}
+<h1>{{ i.mobile_name }}</h1>
+<h3>{{ i.camera }}</h3>
+<h3>{{ i.ram }}</h3>
+<h3>{{ i.overview }}</h3>
+<p>{{ i.date }}</p>
+<p>{{ i.time }}</p>
+<hr>
+{% endfor %}
